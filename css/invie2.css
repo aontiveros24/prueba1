@@ -1,0 +1,268 @@
+/**{
+  width(ancho): tamaño;
+  height(alto): tamaño;
+  padding: 10px;
+  padding: 10px; para agregar padding de 10 px a todo la caja
+  padding-top: 10px; para agregar padding de 10px solo arriba
+  padding-right: 13px; para agregar padding de 10px solo derecha
+  padding-bottom: 5px;para agregar padding de 10px solo abajo
+  padding-left: 10px;para agregar padding de 10px solo izquierda
+  padding: 10px 13px 5px 10px;para agregar padding en todas las direcciones, en direccion de las manecillas del reloj
+  margin:10px;
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin: 10px 15px 5px 10px;
+  border: 2px solid red;
+}*/
+
+body{
+  font-family: 'Allerta', sans-serif;
+  margin: 0;
+}
+
+table{
+  width: 100%;
+}
+
+th{
+  background: #273b47;
+  color: white;
+}
+
+th{
+  padding: 10px 20px;
+  text-align: left;
+}
+
+td{
+padding: 20px;
+}
+
+table, th, td{
+  border: 1px solid #273b47;
+  border-collapse: collapse;
+}
+
+input{
+  outline: 0;
+}
+
+input:focus, textarea:focus{
+  background: lightgray;
+}
+.background{
+  background-image: url("../images/background.png");
+  background-size: cover;
+}
+.menu li:before{
+  content: '∘';
+  font-size: 25px;
+  line-height: 20px;
+  color: white;
+}
+.contenedor{
+  width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+.titulo{
+  font-size: 70px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0px;
+  margin-top: 70px;
+}
+
+.titulo span{
+  text-decoration: underline;
+}
+
+.portada{
+  color: white;
+  padding: 20px;
+  height: 500px;
+}
+
+.portada h3{
+  margin-top: 0;
+  line-height: 40px;
+}
+
+.portada button{
+  margin-bottom: 70px;
+}
+
+.title-a{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.title-b{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.guitarras h2{
+  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.guitarras {
+  color: #587186;
+  margin-bottom: 60px;
+}
+
+.menu{
+  font-size: 24px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.menu li{
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.menu a{
+  color: white;
+  text-decoration: none;
+}
+
+.logotipo{
+  display: inline-block;
+  margin-left: 0;
+}
+
+.guitarra{
+  /*overflow: hidden;*/ /*te organiza la imagen para que quede a la par del texto*/
+  border: 1px solid #587186;
+  padding: 10px;
+  margin: 10px 10px 40px 10px;
+  border-radius: 8px;
+}
+
+.derecha{
+  float: right;
+  position: relative;
+  bottom: 127px;
+}
+
+.izquierda{
+  float:left;
+  position: relative;
+}
+
+.guitarra ol{
+  padding: 0;
+}
+
+.contenedor-guitarra-a{
+    padding-left: 20px;
+}
+
+.contenedor-guitarra-b{
+  margin-left: 370px;/*se coloca esto porque se resta el tamaño de la imagen
+  y el margin que realmente le estamos dando es de 20px*/
+  position: relative;
+  bottom: 90px;
+}
+
+.guitarra.b{
+  height: 190px;
+}
+
+.header{
+  position: relative;
+}
+
+.button{
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  padding: 7px 12px;
+  font-size: 18px;
+  background: #fd324e;
+  background: linear-gradient(to left, #fe344e, #ff7250);
+
+  /*background: #f3c5bd; /* Old browsers */
+  /*background: -moz-linear-gradient(top, #f3c5bd 0%, #e86c57 50%, #ea2803 51%, #ff6600 75%, #c72200 100%); /* FF3.6-15 */*/
+  /*background: -webkit-linear-gradient(top, #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* Chrome10-25,Safari5.1-6 */*/
+  /*background: linear-gradient(to bottom, #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */*/
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 );*/
+
+}
+
+.footer{
+  background: #273b47;
+  padding: 50px 10px;
+}
+
+.contacto img{
+  display: block;
+}
+
+.contacto strong{
+  display: block;
+}
+
+.contacto a{
+  color: white;
+  text-decoration: none;
+  margin: 10px 10px 10px 0;
+}
+
+.footer .contenedor{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacto{
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.formulario{
+  display: flex;
+  width: 400px;
+  color: white;
+}
+
+.col1, .col2{
+  display:flex;
+  flex-direction: column;
+}
+
+.col1{
+  margin-right: 15px;
+}
+
+.col2{
+  align-items: flex-start;
+}
+
+.col2 .button{
+  margin-top: 15px;
+}
+
+.intereses label{
+  font-size: 12px;
+}
+
+.formulario label, .sexo, .intereses{
+  margin-bottom: 10px;
+}
+
+.sexo{
+  margin-top: 10px;
+}
+
+.tabla{
+  margin: 50px 0;
+}
